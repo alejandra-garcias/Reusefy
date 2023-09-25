@@ -1,5 +1,12 @@
-@import '~bootstrap/dist/css/bootstrap';
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
 
 
 *{
