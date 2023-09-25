@@ -4,7 +4,7 @@
             {{session('message')}}
         </div>
     @endif
-    
+
     <form wire:submit.prevent='store'>
         @csrf
         <div class="mb-3">
@@ -20,6 +20,15 @@
             @error('price')
                 {{$message}}
             @enderror>
+        </div>
+        <div class="mb-3">
+            <label for="category" class='form-label'>Category:</label>
+            <select wire:model.defer="category" class="form-control">
+            <option value=''>Selecciona una categoria</option>
+            @foreach ($categories as $category)
+                <option value="{{'category->id'}}">{{$category->name}}</option>
+            @endforeach
+            </select>
         </div>
         <div class="mb-3">
             <label for="body" class='form-label'>Descripcion:</label>
