@@ -1,0 +1,30 @@
+footer{
+    display: flex;
+    border-top: 0.01rem solid var(--terciary);
+    padding-top: 0.3rem;
+    width: 100vw;
+    li {
+        list-style: none;
+    }
+    p {
+        font-size: 0.55rem;
+    }
+    li {
+        font-size: 0.7rem;
+    }
+     h3 {
+        font-size: 0.9rem;
+    }
+    .footer-redes-lista{
+        display:flex;
+        gap:1rem;
+        margin: 0;
+        padding: 0.1rem;
+
+    }
+    .footer-redes-lista li{
+        list-style: none;
+    }
+}
+
+

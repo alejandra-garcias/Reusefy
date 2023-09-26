@@ -1,0 +1,71 @@
+
+*{
+    font-family: 'Mooli', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: var(--primary);
+    color: var(--secundary);
+    }
+
+.checkbox:checked{
+    background-color: var(--primary);
+    color:var(--primary);
+}
+.checkbox:focus{
+    box-shadow: 0px 0px 15px -4px #7FBFB3;
+    outline: none;
+    border: 1px solid #7FBFB3 ;
+
+}
+.checkboxtext{
+    background-color: var(--primary);
+
+}
+.checkboxtext:focus{
+    box-shadow: 0px 0px 15px -4px #7FBFB3;
+    outline: none;
+    border: 1px solid #7FBFB3 ;
+}
+
+/*Botones*/
+.boton-verde{
+    width: 15vw;
+    height:6vh ;
+    background-color: var(--primary);
+    color: var(--secundary);
+    border-radius: 60px;
+    cursor: pointer;
+    gap:1px;
+    border: none;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+
+    a{
+        color: var(--secundary);
+        text-decoration: none
+    }
+}
+.boton-verde:hover{
+    background-color: #17957e;
+
+}
+.boton-blanco{
+    background-color: var(--secundary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 60px;
+    cursor: pointer;
+    gap:1px;
+    width: 15vw;
+    height:6vh ;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+.boton-blanco:hover{
+    background-color: var(--primary);
+    color: var(--secundary);
+    border: 3px solid var(--secundary);
+}
