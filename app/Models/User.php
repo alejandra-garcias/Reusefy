@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+use App\Models\Ad;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -10,6 +11,9 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
+    public function ads(){
+        return $this->hasMany(Ad::class);
+    }
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
