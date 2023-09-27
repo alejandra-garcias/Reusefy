@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 ::selection{
     background-color: var(--primary);
     color: var(--secundary);
@@ -31,41 +34,44 @@
 }
 
 /*Botones*/
-.boton-verde{
+.btn{
     width: 15vw;
     height:6vh ;
-    background-color: var(--primary);
-    color: var(--secundary);
     border-radius: 60px;
     cursor: pointer;
     gap:1px;
     border: none;
     font-size: 0.7rem;
     transition: all 0.3s ease;
+}
+.btn-green{
+
+    background-color: var(--primary);
+    color: var(--secundary);
+
 
     a{
         color: var(--secundary);
-        text-decoration: none
     }
 }
-.boton-verde:hover{
+.btn-green:hover{
     background-color: #17957e;
 
 }
-.boton-blanco{
+.btn-white{
     background-color: var(--secundary);
     color: var(--primary);
-    border: 1px solid var(--primary);
-    border-radius: 60px;
-    cursor: pointer;
-    gap:1px;
-    width: 15vw;
-    height:6vh ;
-    font-size: 0.7rem;
-    transition: all 0.3s ease;
+    border: 2px solid var(--primary);
+
+    a{
+        color: var(--primary);
+    }
 }
-.boton-blanco:hover{
+.btn-white:hover{
     background-color: var(--primary);
-    color: var(--secundary);
+
     border: 3px solid var(--secundary);
+    a{
+        color: var(--secundary);
+    }
 }

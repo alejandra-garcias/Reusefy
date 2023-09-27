@@ -6,16 +6,19 @@ header{
     justify-content: space-between;
     background-color: var(--secundary);
     padding: 0.5rem;
+
     .nav-list{
         display:flex;
         gap:1rem;
     }
     .logo{
         height: 2.5rem;
-        display:none
+        display:none;
+
     }
     .logo-texto{
         height: 2.5rem;
+        padding-right: 2px;
     }
     .search-box{
         width: 55vw;
@@ -64,9 +67,18 @@ header{
         .search-box{
             width: 80vw;
         }
-        .boton-blanco:hover{
-            border: none;
-        }
-        
+
+
     }
 }
+
+
+.bottom{
+display: none;
+position: relative;
+align-items: center;
+justify-content: center;
+@media screen and (max-width: 875px){
+display: flex;
+
+}}

@@ -1,6 +1,6 @@
 <footer>
     <div class="footer-imagen">
-        <img src="{{ asset('solo-texto.png') }}" class='texto'>
+        <img src="{{ asset('solo-texto.png') }}" class='text-logo'>
         <p>Copyright © 2023 Reusefy © de sus respectivos propietarios</p>
         <div class="footer-redes">
             <ul class='footer-redes-lista'>
@@ -10,32 +10,5 @@
             </ul>
         </div>
     </div>
-
-    <ul>
-        <h3>Reusefy</h3>
-        <li>Quienes somos </li>
-        <li>Como funciona</li>
-        <li>Trabaja con nosotros</li>
-    </ul>
-
-    <ul>
-        <h3>Soporte</h3>
-        <li>Centro ayuda</li>
-        <li>Reglas de publicacion</li>
-    </ul>
-
-    <ul>
-        <h3>Legal</h3>
-        <li>Aviso legal</li>
-        <li>Condiciones de uso</li>
-        <li>Politicas de privacidad</li>
-        <li>Cookies</li>
-    </ul>
-
-
-    <ul>
-        <h3>Reusify PRO</h3>
-        <li>Impulsa tu negocio</li>
-    </ul>
 
 </footer>

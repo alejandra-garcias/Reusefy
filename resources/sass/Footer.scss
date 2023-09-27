@@ -2,7 +2,7 @@ footer{
     display: flex;
     border-top: 0.01rem solid var(--terciary);
     padding-top: 0.3rem;
-    width: 100vw;
+    width: 100%;
     li {
         list-style: none;
     }
@@ -24,6 +24,10 @@ footer{
     }
     .footer-redes-lista li{
         list-style: none;
+    }
+    .text-logo{
+        height: 2.5rem;
+        padding-left: 0.2rem;
     }
 }
 

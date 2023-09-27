@@ -1,31 +1,60 @@
 <header>
     <a href="{{ url('/') }}"><img src="{{ asset('logo-texto.png') }}" class='logo-texto'></a>
     <a href="{{ url('/') }}"><img src="{{ asset('logo.png') }}" class='logo'></a>
-    <form class="d-flex" role="search">
-        <input class="form-control me-1 search-box" type="search" placeholder="Buscar en todas las categorías..." aria-label="Search">
+    <form role="search">
+        <input class="form-control  search-box" type="search" placeholder="   Buscar en todas las categorías..."
+            aria-label="Search">
     </form>
     <nav>
-    <div class="nav-list">
+        <div class="nav-list">
 
-@guest
+            @guest
+                @if (Route::has('login'))
+                    <button class="btn btn-green"><a
+                            href="{{ route('login') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
+                @elseif (Route::has('register'))
+                    <button class="btn btn-green"><a
+                            href="{{ route('register') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
+                @endif
+            @else
+                <button class="btn btn-white">
+                    <form id="logoutForm" action="{{ route('logout') }}" method='POST'>
+                        @csrf
+                        <a id='logoutBtn'>Cerrar Sesion</a>
+                    </form>
+                </button>
+
+                <button class="btn btn-green"><a href="{{ route('ads.create') }}">{{ __('Subir artículo') }}</a></button>
+
+            @endguest
+
+
+        </div>
+    </nav>
+
+
+
+</header>
+<!--Nav responsive-->
+
+<div class=bottom>
+    @guest
     @if (Route::has('login'))
-        <button class="boton-blanco"><a href="{{ route('login') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
+        <button class="btn btn-green"><a
+                href="{{ route('login') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
     @elseif (Route::has('register'))
-        <button class="boton-blanco"><a href="{{ route('register') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
+        <button class="btn btn-green"><a
+                href="{{ route('register') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
     @endif
-
 @else
-    <button class="boton-blanco"><form id="logoutForm" action="{{ route('logout') }}" method='POST'>
-    @csrf
-    </form><a class="logout" id='logoutBtn'>Cerrar Sesion</a></button>
-    <button class="boton-verde"><a href="{{ route('ads.create') }}">{{ __('Subir artículo') }}</a></button>
+    <button class="btn btn-white">
+        <form id="logoutForm" action="{{ route('logout') }}" method='POST'>
+            @csrf
+            <a id='logoutBtn'>Cerrar Sesion</a>
+        </form>
+    </button>
+
+    <button class="btn btn-green"><a href="{{ route('ads.create') }}">{{ __('Subir artículo') }}</a></button>
 
 @endguest
-
-
-    </div>
-    </nav>
-</header>
-
-
-
+</div>
