@@ -29,7 +29,7 @@
             <select class="input-box" wire:model.defer="category" >
                 <option value=''>Selecciona una categoria</option>
                 @foreach ($categories as $category)
-                    <option value="{{ 'category->id' }}">{{ $category->name }}</option>
+                    <option value="{{ $category->id }}">{{ $category->name }}</option>
                 @endforeach
             </select>
         </div>

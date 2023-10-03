@@ -12,7 +12,7 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     public function ads(){
-        return $this->hasMany(Ad::class);
+        return $this->HasMany(Ad::class);
     }
     use HasApiTokens, HasFactory, Notifiable;
 

@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Livewire;
-use App\Models\Ad;
-use App\Models\User;
 use Livewire\Component;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
@@ -31,6 +29,7 @@ class CreateAd extends Component
             'title'=>$this->title,
             'body'=>$this->body,
             'price'=>$this->price,
+    
         ]);
         Auth::user()->ads()->save($ad);
         session()->flash('message','Anuncio creado con exito');

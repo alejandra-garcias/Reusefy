@@ -10,7 +10,7 @@ class Category extends Model
     protected $fillable = ['name'];
 
     public function ads(){
-        return $this->hasMany(Ad::class);
+        return $this->HasMany(Ad::class);
     }
     use HasFactory;
 }
