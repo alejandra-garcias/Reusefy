@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
         }catch(\Throwable $th){
             dump("ALERT:Recuerda lanzar las migrations cuando acabes el clone");
         }
-        Paginator::useBootstrap();
+    
 }
 
 }
