@@ -36,7 +36,7 @@
         </div>
         <div>
             <label for="body">Descripcion:</label>
-            <textarea class="" placeholder="    Describe tu articulo, incluye todos los detalles que puedas." wire:model="body" @error('body') is-invalid @enderror></textarea>
+            <textarea class="" wire:model="body" @error('body') is-invalid @enderror></textarea>
             @error('body')
                 {{ $message }}
             @enderror

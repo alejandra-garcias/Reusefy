@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 
 class MakeUserRevisor extends Command
 {
-    protected $signature = 'reusefy:makeUserRevisor';
+    protected $signature = 'reusefy:makeUserRevisor {email}';
     protected $description = 'Asigna el rol de revisor a un usuario';
 
     public function __construct()
@@ -19,8 +19,7 @@ class MakeUserRevisor extends Command
     public function handle()
     {
 
-        $email = $this->ask("Introducir el correo del usuario");
-        $user = User::where('email', $email)->first();
+        $user = User::where('email', $this->argument('email'))->first();
         if(!$user){
             $this->error("Usuario no encontrado");
             return;

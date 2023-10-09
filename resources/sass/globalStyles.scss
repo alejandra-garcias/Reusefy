@@ -37,12 +37,13 @@ a{
 .btn{
     width: 15vw;
     height:6vh ;
-    border-radius: 60px;
+    border-radius: 10px;
     cursor: pointer;
     gap:1px;
     border: none;
     font-size: 0.7rem;
     transition: all 0.3s ease;
+    width: auto;
 }
 .btn-green{
 
