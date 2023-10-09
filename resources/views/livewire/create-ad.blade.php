@@ -11,6 +11,7 @@
 
         <h1>¿Que te gustaria vender?</h1>
         <div>
+
             <label for="title">Titulo</label>
             <input class="input-box" placeholder="¿Que vendes?" wire:model="title" type="text" @error('title') is-invalid @enderror">
             @error('title')
@@ -43,6 +44,7 @@
         <div>
             <button type="submit" class='btn btn-green'>Publicar anuncio</button>
         </div>
+
 
     </form>
 </div>

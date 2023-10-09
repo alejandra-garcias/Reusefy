@@ -7,6 +7,7 @@
 
             <h1>{{ $ad->title }}</h1>
             <p>{{ $ad->body }}</p>
+            <p>{{ $ad->price }}</p>
             <p><a class="badge " href="{{route('category.ads',$ad->category)}}"> {{ $ad->category->name }}</a></p>
             <p><span class="badge ">{{ $ad->created_at->format('d/m/Y') }}</span>  </p>
             <small>{{$ad->user->name}}</small>

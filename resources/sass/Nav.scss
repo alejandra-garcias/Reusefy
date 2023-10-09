@@ -7,15 +7,6 @@ header{
     background-color: var(--secundary);
     padding: 0.5rem;
 
-    .nav-list{
-        display:flex;
-        gap:1rem;
-    }
-    .logo{
-        height: 2.5rem;
-        display:none;
-
-    }
     .logo-texto{
         height: 2.5rem;
         padding-right: 2px;
@@ -34,51 +25,7 @@ header{
         border: 1px solid #7FBFB3 ;
 
     }
-    .search-box:hover{
-        border: 1.5px solid var(--terciary);
-    }
-
-    @media screen and (max-width: 990px){
-
-        header{
-            justify-content: flex-start;
-        }
-        .search-box{
-            width: 50vw;
-            transition: width 0.5s;
-        }
-    }
-
-    @media screen and (max-width: 875px){
-        .logo{
-            display: block;
-
-        }
-        .logo-texto{
-            display: none;
-        }
-        .nav-list{
-            display: none;
-        }
-
-        header{
-            justify-content: flex-start;
-        }
-        .search-box{
-            width: 80vw;
-        }
 
 
-    }
 }
 
-
-.bottom{
-display: none;
-position: relative;
-align-items: center;
-justify-content: center;
-@media screen and (max-width: 875px){
-display: flex;
-
-}}
