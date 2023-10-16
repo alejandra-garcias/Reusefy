@@ -19,4 +19,9 @@ class PublicController extends Controller
 
     }
 
+    public function setLocale($locale){
+        session()->put('locale',$locale);
+        return redirect()->back();
+    }
+
 }

@@ -39,3 +39,5 @@ Route::get('revisor/{user}/make', [RevisorController::class, 'makeRevisor'])->mi
 Route::get('/revisor', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.home');
 Route::patch('/revisor/ad/{ad}/accept', [RevisorController::class, 'acceptAd'])->name('revisor.ad.accept');
 Route::patch('/revisor/ad/{ad}/reject', [RevisorController::class, 'rejectAd'])->name('revisor.ad.reject');
+
+Route::post('/locale/{locale}', [PublicController::class,'setLocale'])->name('locale.set');
