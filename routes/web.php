@@ -31,8 +31,6 @@ Route::get('/category/{category:name}/ads', [PublicController::class, 'adsByCate
 
 Auth::routes();
 
-
-
 Route::get('revisor/become', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('revisor.become');
 Route::get('revisor/{user}/make', [RevisorController::class, 'makeRevisor'])->middleware('auth')->name('revisor.make');
 

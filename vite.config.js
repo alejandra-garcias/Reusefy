@@ -8,7 +8,6 @@ export default defineConfig({
             input: [
                 'resources/sass/app.scss',
                 'resources/js/app.js',
-
             ],
             refresh: true,
         }),
@@ -16,7 +15,7 @@ export default defineConfig({
     resolve:{
         alias:{
             '~bootstrap':path.resolve(__dirname,'node_modules/bootstrap'),
-            '../../node_modules/flag-icon-css/css/flag-icons.css':path.resolve(__dirname,'node_modules/flag-icon-css'),
+            'node_modules/flag-icon-css/css/flag-icons.css':path.resolve(__dirname,'node_modules/flag-icon-css'),
         }
     }
 });

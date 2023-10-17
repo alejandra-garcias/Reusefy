@@ -31,64 +31,55 @@
                             <li><a class="dropdown-item"
                                     href="{{ route('category.ads', 'electronica') }}">Electronica</a></li>
                             <hr class="dropdown-divider">
+                        </ul>
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    @guest
+                    <li class="nav-item dropdown">
+                        @guest
                         @if (Route::has('login'))
-                            <button class="btn btn-green"><a
-                                    href="{{ route('login') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
+                        <button class="btn btn-green"><a
+                                href="{{ route('login') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
                         @elseif (Route::has('register'))
-                            <button class="btn btn-green"><a
-                                    href="{{ route('register') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
+                        <button class="btn btn-green"><a
+                                href="{{ route('register') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
                         @endif
-                    @else
+                        @else
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false"> {{ Auth::user()->name }}
                         </a>
                         <ul class="dropdown-menu">
-
-
                             @if (Auth::user()->is_revisor)
-                                <li>
-                                    <a class="dropdown-item" href="{{ route('revisor.home') }}">
+                            <li>
+                                <a class="dropdown-item" href="{{ route('revisor.home') }}">
                                     Revisor
-                                        <span class="badge rounded-pill bg-danger">
-                                            {{\App\Models\Ad::ToBeRevisionedCount() }}
-                                        </span>
-                                    </a>
-                                </li>
+                                    <span class="badge rounded-pill bg-danger">
+                                        {{\App\Models\Ad::ToBeRevisionedCount() }}
+                                    </span>
+                                </a>
+                            </li>
                             @endif
-                                <hr class="dropdown-divider">
-                                <form id="logoutForm" action="{{ route('logout') }}" method='POST'>
-                                    @csrf
-                                    <a id='logoutBtn'> Cerrar Sesion</a>
-                                </form>
+                            <hr class="dropdown-divider">
+                            <form id="logoutForm" action="{{ route('logout') }}" method='POST'>
+                                @csrf
+                                <a id='logoutBtn'> Cerrar Sesion</a>
+                            </form>
                         </ul>
-
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page"
                             href="{{ route('ads.create') }}">{{ __('Subir artículo') }}</a>
                     </li>
-                @endguest
-
-                <li class="nav-item">
-                    <x-locale lang="en" country='gb'/>
-                </li>
-                <li class="nav-item">
-                    <x-locale lang="es" country='es'/>
-                </li>
-                <li class="nav-item">
-                    <x-locale lang="it" country='it'/>
-                </li>
-
+                    @endguest
+                    <li class="nav-item">
+                        <x-locale lang="en" country='gb'/>
+                    </li>
+                    <li class="nav-item">
+                        <x-locale lang="es" country='es'/>
+                    </li>
+                    <li class="nav-item">
+                        <x-locale lang="it" country='it'/>
+                    </li>
                 </ul>
-
             </div>
         </div>
     </nav>
-
 </header>
