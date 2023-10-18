@@ -70,13 +70,13 @@
                     </li>
                     @endguest
                     <li class="nav-item">
-                        <x-locale lang="en" country='gb'/>
+                        <x-local lang="en" country='gb'/>
                     </li>
                     <li class="nav-item">
-                        <x-locale lang="es" country='es'/>
+                        <x-local lang="es" country='es'/>
                     </li>
                     <li class="nav-item">
-                        <x-locale lang="it" country='it'/>
+                        <x-local lang="it" country='it'/>
                     </li>
                 </ul>
             </div>
