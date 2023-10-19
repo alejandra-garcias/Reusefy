@@ -9,27 +9,27 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <form class="d-flex  " role="search">
                     <input class="form-control me-2  " type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success btn-green" type="submit">Buscar</button>
+                    <button class="btn btn-outline-success btn-green" type="submit">{{__("Buscar")}}</button>
                 </form>
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Categorias
+                            {{__("Categorías")}}
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('category.ads', 'coches') }}">Coches</a>
+                            <li><a class="dropdown-item" href="{{ route('category.ads', 'coches') }}">{{__("Coches")}}</a>
                             </li>
-                            <li><a class="dropdown-item" href="{{ route('category.ads', 'motos') }}">Motocicletas</a>
+                            <li><a class="dropdown-item" href="{{ route('category.ads', 'motos') }}">{{__("Motocicletas")}}</a>
                             </li>
-                            <li><a class="dropdown-item" href="{{ route('category.ads', 'moviles') }}">Telefonos</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="{{ route('category.ads', 'ordenadores') }}">Ordenadores</a></li>
-                            <li><a class="dropdown-item" href="{{ route('category.ads', 'hogar') }}">Hogar</a>
+                            <li><a class="dropdown-item" href="{{ route('category.ads', 'moviles') }}">{{__("Telefonos")}}</a>
                             </li>
                             <li><a class="dropdown-item"
-                                    href="{{ route('category.ads', 'electronica') }}">Electronica</a></li>
+                                    href="{{ route('category.ads', 'ordenadores') }}">{{__("Ordenadores")}}</a></li>
+                            <li><a class="dropdown-item" href="{{ route('category.ads', 'hogar') }}">{{__("Hogar")}}</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="{{ route('category.ads', 'electronica') }}">{{__("Electrónica")}}</a></li>
                             <hr class="dropdown-divider">
                         </ul>
                     </li>
@@ -60,7 +60,7 @@
                             <hr class="dropdown-divider">
                             <form id="logoutForm" action="{{ route('logout') }}" method='POST'>
                                 @csrf
-                                <a id='logoutBtn'> Cerrar Sesion</a>
+                                <a id='logoutBtn'>{{__( "Cerrar Sesion")}}</a>
                             </form>
                         </ul>
                     </li>

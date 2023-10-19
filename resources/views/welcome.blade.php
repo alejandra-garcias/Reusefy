@@ -1,8 +1,8 @@
 <x-layout>
     <section class="welcome">
         <div class="intro">
-            <h1>Compra y vende artículos de segunda mano</h1>
-            <p> con comodidad desde tu propio sillón.</p>
+            <h1>{{__('messages.welcome')}}</h1>
+            <p> {{__('messages.welcome.p')}}</p>
         </div>
 
 
@@ -35,10 +35,10 @@
                     </div>
                 </div>
             @empty
-                <h2>Ups...parece que aún no hay nada por aquí</h2>
-                <a href="{{ route('ads.create') }}">Publica tu primer anuncio</a> o <a
-                    href="{{ route('home') }}">Vuelve
-                    al inicio</a>
+                <h2>{{__("Ups...parece que aún no hay nada por aquí")}}</h2>
+                <a href="{{ route('ads.create') }}">{{__("Publica tu primer anuncio")}}</a> o <a
+                    href="{{ route('home') }}">{{__("Vuelve
+                    a la home")}}</a>
             @endforelse
 
 

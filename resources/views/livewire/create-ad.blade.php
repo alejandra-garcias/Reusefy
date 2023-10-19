@@ -9,33 +9,33 @@
     <form wire:submit.prevent='store'>
         @csrf
 
-        <h1>¿Que te gustaria vender?</h1>
+        <h1>¿{{__("Que te gustaria vender")}}?</h1>
         <div>
 
-            <label for="title">Titulo</label>
+            <label for="title">{{__("Título")}}</label>
             <input class="input-box" placeholder="¿Que vendes?" wire:model="title" type="text" @error('title') is-invalid @enderror">
             @error('title')
                  {{ $message }}
             @enderror
         </div>
         <div>
-            <label for="price">Precio</label>
+            <label for="price">{{__("Precio")}}</label>
             <input class="input-box" placeholder="¿Por cuanto lo vendes?" wire:model="price" type="text" @error('price') is-invalid @enderror">
             @error('price')
                 {{ $message }}
             @enderror
         </div>
         <div>
-            <label for="category">Categoria:</label>
+            <label for="category">{{__("Categoría")}} :</label>
             <select class="input-box" wire:model.defer="category" >
-                <option value=''>Selecciona una categoria</option>
+                <option value=''>{{__("Seleccionar Categoría")}}</option>
                 @foreach ($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>
                 @endforeach
             </select>
         </div>
         <div>
-            <label for="body">Descripcion:</label>
+            <label for="body">{{__("Descripción")}} :</label>
             <textarea class="" wire:model="body" @error('body') is-invalid @enderror></textarea>
             @error('body')
                 {{ $message }}
@@ -55,11 +55,11 @@
                 @foreach ($images as $key=>$image )
                 <div class='col-12 col-md-4'>
                     <img src="{{$image->temporaryUrl()}}" alt="" class="img-fluid">
-                    <button type= "button" class="btn btn-danger" wire:click='removeImage({{$key}})'>Eliminar</button>
+                    <button type= "button" class="btn btn-danger" wire:click='removeImage({{$key}})'>{{__("Eliminar")}}</button>
                 </div>
 
                 @endforeach
-                </div>
+                </div> 
 
             </div>
         </div>
