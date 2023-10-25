@@ -1,11 +1,16 @@
 <?php
 
 namespace App\Livewire;
-use Livewire\Component;
 use App\Models\Ad;
-use Livewire\WithFileUploads;
+use Livewire\Component;
 use App\Models\Category;
+use App\Jobs\ResizeImage;
+use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\Bus;
+use App\Jobs\GoogleVisionLabelImage;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
+use App\Jobs\GoogleVisionSafeSearchImage;
 
 class CreateAd extends Component
 {
@@ -40,11 +45,14 @@ class CreateAd extends Component
         $ad = $category->ads()->create($validateData);
         Auth::user()->ads()->save($ad);
         if(count($this->images)){
+            $newFileName = "ads/$ad->id";
             foreach($this->images as $image){
-            $ad->images()->create(
-                ['path' =>$image->store("images/$ad->id",'public')]
-            );
+            $newImage = $ad->images()->create(['path'=>$image->store($newFileName,'public')]);
+            dispatch(new ResizeImage($newImage->path,400,300));
+            dispatch(new GoogleVisionSafeSearchImage($newImage->id));
         }
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
+
         }
         session()->flash('message','Anuncio creado con exito');
         $this->cleanForm();
@@ -57,6 +65,7 @@ class CreateAd extends Component
         $this->body = '';
         $this->category='';
         $this->price='';
+        $this->images=[];
     }
     public function render()
     {

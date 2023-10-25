@@ -20,15 +20,14 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot()
     {
-        try{
-            $categories = Category::all();
-            View::share('categories',$categories);
-        }catch(\Throwable $th){
-            dump("ALERT:Recuerda lanzar las migrations cuando acabes el clone");
+        try {
+            $categories= Category::all();
+            View::share('categories', $categories);
+        } catch (\Throwable $th) {
+        dump("ALERT: Recuerda lanzar las migrations cuando acabes el clone");
         }
-    
-}
+    }
 
 }

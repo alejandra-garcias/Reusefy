@@ -35,7 +35,7 @@ class RevisorController extends Controller
         return redirect()->back()->withMessage(['type' => 'danger', 'text' => 'Anuncio rechazado']);
     }
 
-    
+
 
 
     public function becomeRevisor()

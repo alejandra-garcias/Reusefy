@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid ">
-            <a href="{{ url('/') }}"><img src="{{ asset('logo-texto.png') }}" class='nav-brand logo-texto'></a>
+            <a href="{{ url('/') }}"><img src="{{ asset('logo.png') }}" class='nav-brand logo-texto'></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -12,12 +12,12 @@
                     <button class="btn btn-outline-success btn-green" type="submit">{{__("Buscar")}}</button>
                 </form>
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             {{__("Categorías")}}
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu ">
                             <li><a class="dropdown-item" href="{{ route('category.ads', 'coches') }}">{{__("Coches")}}</a>
                             </li>
                             <li><a class="dropdown-item" href="{{ route('category.ads', 'motos') }}">{{__("Motocicletas")}}</a>

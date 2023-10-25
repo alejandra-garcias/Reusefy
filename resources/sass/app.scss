@@ -1,9 +1,9 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
 
 @import '~bootstrap/dist/css/bootstrap';
 @import '../../node_modules/flag-icon-css/css/flag-icons.css';
-
+@import '~bootstrap-icons/font/bootstrap-icons';
 
 // Variables
 @import 'variables';
@@ -19,3 +19,22 @@
 
 
 
+
+.VERY_UNLIKELY{
+    color: greenyellow
+}
+.UNLIKELY {
+    color: green
+}
+.POSSIBLE {
+    color: orange;
+}
+.LIKELY {
+    color: orangered;
+}
+.VERY_LIKELY{
+    color: red;
+}
+.UNKNOWN {
+    color: grey;
+}

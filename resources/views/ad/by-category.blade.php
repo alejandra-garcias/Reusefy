@@ -4,9 +4,8 @@
     @forelse ($ads as $ad)
     <div class="card" style="width: 18rem;">
         @if ($ad->images()->count() > 0)
-                        <!-- <img src="{{ !$ad->images()->get()->isEmpty()? Storage::url($ad->images()->first()->path): 'https://via.placeholder.com/150' }}" class="card-img-top" alt="...">-->
 
-                        <img src="{{ Storage::url($ad->images()->first()->path) }}" class="card-img-top" alt="...">
+                        <img src="{{$ad->images()->first()->getUrl(400,300)}}" class="card-img-top" alt="...">
                     @else
                         <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
                     @endif

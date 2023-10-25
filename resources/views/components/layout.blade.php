@@ -22,7 +22,7 @@
     <x-nav />
 
     @if (session()->has('message'))
-        <x-alert :type="session('message')['type']" :message="session('message')['text']" />
+        <x-alertt :type="session('message')['type']" :message="session('message')['text']" />
     @endif
     {{ $slot }}
     <x-footer />
