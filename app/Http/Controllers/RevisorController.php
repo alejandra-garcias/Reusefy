@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\AdController;
 use Illuminate\Support\Facades\Artisan;
+use App\Models\Image;
 
 class RevisorController extends Controller
 {

@@ -37,7 +37,7 @@ class CreateAd extends Component
         'temporary_images.*.image' => 'Los archivos tienen que ser imagenes',
         'temporary_images.*.max' => 'La imagen supera los :max mb',
         'images.image' => 'El archivo tiene que ser una imagen',
-        'images.ma x' => 'La imagen supera los :max mb',
+        'images.max' => 'La imagen supera los :max mb',
     ];
     public function store(){
         $validateData = $this->validate();
