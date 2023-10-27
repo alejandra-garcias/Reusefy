@@ -7,8 +7,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <form class="d-flex  " role="search">
-                    <input class="form-control me-2  " type="search" placeholder="Search" aria-label="Search">
+                <form action="{{route('search')}}" method="GET" class="d-flex  " role="search" >
+                    <input  class="form-control me-2  " type="search" placeholder="Search" aria-label="Search" name="q">
                     <button class="btn btn-outline-success btn-green" type="submit">{{__("Buscar")}}</button>
                 </form>
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">

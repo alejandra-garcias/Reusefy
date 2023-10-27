@@ -39,3 +39,5 @@ Route::patch('/revisor/ad/{ad}/accept', [RevisorController::class, 'acceptAd'])-
 Route::patch('/revisor/ad/{ad}/reject', [RevisorController::class, 'rejectAd'])->name('revisor.ad.reject');
 
 Route::post('/locale/{locale}', [PublicController::class,'setLocale'])->name('locale.set');
+
+Route::get("/search",[PublicController::class,'search'])->name('search');

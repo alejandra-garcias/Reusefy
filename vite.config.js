@@ -16,6 +16,7 @@ export default defineConfig({
         alias:{
             '~bootstrap':path.resolve(__dirname,'node_modules/bootstrap'),
             'node_modules/flag-icon-css/css/flag-icons.css':path.resolve(__dirname,'node_modules/flag-icon-css'),
+            'node_modules/bootstrap-icons/fonts': path.resolve(__dirname, 'node_modules/bootstrap-icons'),
         }
     }
 });

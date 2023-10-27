@@ -21,7 +21,6 @@
         </ul>
         <div class="card-body">
           <a href="{{route('ads.show',$ad)}}" class="card-link">{{__('Ver')}}</a>
-          <a href="#" class="card-link">Another link</a>
         </div>
       </div>
       @empty
