@@ -9,6 +9,7 @@
         <div class="anuncios">
             @forelse ($ads as $ad)
                 <div class="card" style="width: 18rem;">
+                    <a href="{{ route('ads.show', $ad) }}">
                     @if ($ad->images()->count() > 0)
                         <img src="{{$ad->images()->first()->getUrl(400,300)}}" class="card-img-top" alt="...">
                     @else
@@ -25,11 +26,12 @@
                                     href="{{ route('category.ads', $ad->category) }}">#{{ $ad->category->name }}</a>
                             </li>
                         @endif
-                        <li class="list-group-item">{{ $ad->user->name }} - {{ $ad->created_at->format('d/m/Y') }}</li>
+                        </li>
                     </ul>
                     <div class="card-body">
                         <a href="{{ route('ads.show', $ad) }}" class="card-link">Ver</a>
                     </div>
+                </a>
                 </div>
             @empty
                 <h2>{{__("Ups...parece que aún no hay nada por aquí")}}</h2>
