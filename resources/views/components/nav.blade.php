@@ -50,11 +50,11 @@
         </li>
     </ul>
     <div class="nav-logo">
-        <a href="{{ url('/') }}"><img src="{{ asset('solo-texto.png') }}" class='navbar-brand logo-texto '></a>
+        <a href="{{ url('/') }}"><img src="{{ asset('reusefy.svg') }}" class='navbar-brand logo-texto '></a>
     </div>
         <form class="nav-form" role="search" action="{{route('search')}}" method="GET" >
             <input class="form-control me-2 search-box" type="search" placeholder="Search" aria-label="Search" name="q">
-            <button class="btn btn-outline-success btn-green" type="submit">{{__("Buscar")}}</button>
+            <button class="btn btn-outline-success btn-grad" type="submit">{{__("Buscar")}}</button>
           </form>
 </div>
 <ul class="nav-elements">
@@ -75,10 +75,10 @@
       <li class="nav-item dropdown">
         @guest
         @if (Route::has('login'))
-        <button class="btn btn-green"><a
-            href="{{ route('login') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
+        <a class="gradiant-text"
+            href="{{ route('login') }}">{{ __('Regístrate o Inicia sesión') }}</a>
         @elseif (Route::has('register'))
-        <button class="btn btn-green"><a
+        <button class="btn btn-grad"><a
             href="{{ route('register') }}">{{ __('Regístrate o Inicia sesión') }}</a></button>
         @endif
       </li>
@@ -94,7 +94,7 @@
     <hr class="dropdown-divider">
     <form  id="logoutForm" action="{{ route('logout') }}" method='POST'>
         @csrf
-        <a id='logoutBtn'>{{__( "Cerrar Sesion")}}</a>
+        <a class="gradiant-text" style="cursor: pointer" id='logoutBtn'>{{__( "Cerrar Sesion")}}</a>
     </form>
     </ul>
     <li class="nav-item">

@@ -1,15 +1,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier">
-<defs>
-<style>.cls-1{fill:none;stroke:#13C1AC;stroke-miterlimit:10;stroke-width:1.91px;}.cls-2{fill:#13C1AC;}</style>
-</defs>
-<rect class="cls-1" x="1.5" y="1.5" width="21" height="16.23" rx="1.91"/>
-<polygon class="cls-1" points="15.82 22.5 8.18 22.5 9.14 17.73 14.86 17.73 15.82 22.5"/>
-<line class="cls-1" x1="5.32" y1="22.5" x2="18.68" y2="22.5"/>
-<circle class="cls-2" cx="12" cy="14.86" r="0.95"/>
-</g>
+<g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd"> <polygon fill="#325AA6" points="4 14 60 14 60 49 4 49"/> <rect width="52" height="31" x="6" y="16" fill="#0A3586"/> <path fill="#80D25B" d="M47.5044647,35.529591 C50.2658885,35.529591 52.5044647,33.1876959 52.5044647,30.2988218 C52.5044647,27.4099477 47.5044647,18.529591 47.5044647,18.529591 C47.5044647,18.529591 42.5044647,27.4099477 42.5044647,30.2988218 C42.5044647,33.1876959 44.743041,35.529591 47.5044647,35.529591 Z" transform="rotate(75 47.504 27.03)"/> <path fill="#80D25B" d="M17.5044647,35.529591 C20.2658885,35.529591 22.5044647,33.1876959 22.5044647,30.2988218 C22.5044647,27.4099477 17.5044647,18.529591 17.5044647,18.529591 C17.5044647,18.529591 12.5044647,27.4099477 12.5044647,30.2988218 C12.5044647,33.1876959 14.743041,35.529591 17.5044647,35.529591 Z" transform="scale(-1 1) rotate(75 0 4.217)"/> <path stroke="#22BA8E" stroke-linecap="round" stroke-width="2" d="M44,28 C37.372583,28 32,33.372583 32,40"/> <path stroke="#22BA8E" stroke-linecap="round" stroke-width="2" d="M32,28 C25.372583,28 20,33.372583 20,40" transform="matrix(-1 0 0 1 52 0)"/> <path fill="#595959" d="M0,49 L64,49 L64,51.5 C64,52.8807119 62.8891602,54 61.4911242,54 L2.50887585,54 C1.12326198,54 0,52.8903379 0,51.5 L0,49 Z"/> </g> </g>
 </svg>

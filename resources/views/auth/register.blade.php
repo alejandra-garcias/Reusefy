@@ -5,7 +5,7 @@
 <div class="container">
     <a href="{{ url('/') }}"><img class='icono' src="x.png" alt=""></a>
     <div class="intro">
-        <img class='logo' src="trato.svg" alt="">
+        <img class='logo' src="register.svg" alt="">
         <h1>Consigue los mejores precios</h1>
         <p>Y gana dinero con lo que no uses</p>
     </div>
@@ -30,7 +30,7 @@
             <input type="checkbox" name="Agree" id="Agree">
             <label for="Agree"> {{ __('Estoy de acuerdo con terminos y condiciones') }}</label>
         </div>
-        <button type="submit" class="btn btn-green">{{ __('Register') }}</button>
+        <button type="submit" class="btn-grad">{{ __('Register') }}</button>
         <p>¿Ya tienes cuenta?<a href="{{ route('login') }}">{{ __(' Inicia sesion') }}</a></p>
 
                     </form>

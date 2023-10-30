@@ -21,7 +21,7 @@
             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
         @enderror
         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirma tu contraseña">
-        <button type="submit" class="btn btn-green">{{ __('Reset Password') }}</button>
+        <button type="submit" class="btn-grad">{{ __('Reset Password') }}</button>
 
 
         </form>

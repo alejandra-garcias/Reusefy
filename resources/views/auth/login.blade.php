@@ -5,7 +5,7 @@
         <div class="container">
             <a href="{{ url('/') }}"><img class='icono' src="x.png" alt=""></a>
             <div class="intro">
-                <img class='logo' src="trato.svg" alt="">
+                <img class='logo' src="logeo.svg" alt="">
                 <h1>Te damos la bienvenida</h1>
                 <p>Nos alegra verte de nuevo por aqui</p>
             </div>
@@ -29,7 +29,7 @@
                     <label for="remember"> {{ __('Recuerdame') }}</label>
                 </div>
 
-                <button type="submit" class="btn btn-green">{{ __('Login') }}</button>
+                <button type="submit" class="btn-grad">{{ __('Login') }}</button>
                 @if (Route::has('password.request'))
                     <a href="{{ route('password.request') }}">{{ __('Has olvidado tu contraseña?') }}</a>
                 @endif

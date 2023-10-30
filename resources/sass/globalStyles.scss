@@ -7,7 +7,7 @@
 }
 a{
     text-decoration: none;
-    color: var(--primary);
+
 }
 ::selection{
     background-color: var(--primary);
@@ -35,46 +35,154 @@ a{
 }
 
 /*Botones*/
-.btn{
-    width: 15vw;
-    height:6vh ;
-    border-radius: 10px;
-    cursor: pointer;
-    gap:1px;
-    border: none;
-    font-size: 0.7rem;
-    transition: all 0.3s ease;
-    width: auto;
-}
-.btn-green{
-
-    background-color: var(--primary);
-    color: var(--secundary);
 
 
-    a{
-        color: var(--secundary);
-    }
-}
-.btn-green:hover{
-    background-color: #17957e;
+
+.gradiant-text {
+    background-image: linear-gradient(to bottom, #8dc113, #16c113, #13c173, #13C1AC,#1387c1);
+    -webkit-background-clip: text;
+    /* Para navegadores basados en Webkit (como Chrome y Safari) */
+    background-clip: text;
+    color: transparent;
+    /* Hace que el texto sea transparente */
 
 }
-.btn-white{
-    background-color: var(--secundary);
-    color: var(--primary);
+
+
+/*_---------------------------------------*/
+
+
+.btn-grad{
     border: 2px solid var(--primary);
-
-    a{
-        color: var(--primary);
-    }
-}
-.btn-white:hover{
-    background-color: var(--primary);
-
-    border: 3px solid var(--secundary);
-    a{
-        color: var(--secundary);
-    }
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #8dc113, #16c113, #13c173, #13C1AC,#1387c1);
+    -webkit-background-clip: text;
+    /* Para navegadores basados en Webkit (como Chrome y Safari) */
+    background-clip: text;
+    color: transparent;
+    padding: 6px 15px 6px 15px;
+    border-radius: 0.4rem;
+    margin:0.3rem;
+    transition: all 0.3s ease;
 }
 
+.btn-grad:hover{
+    background: #13C1AC;
+    background-image: -webkit-linear-gradient(top, #13C1AC, #13c173);
+    background-image: -moz-linear-gradient(top, #13C1AC, #13c173);
+    background-image: -ms-linear-gradient(top, #13C1AC, #13c173);
+    background-image: -o-linear-gradient(top, #13C1AC, #13c173);
+    background-image: linear-gradient(to bottom, #13C1AC, #13c173);
+    color: #ffffff;
+}
+
+
+.abadge{
+    color: var(--primary);
+    background-color: white;
+   padding: 4px 8px;
+   text-align: center;
+   border-radius: 60px;
+   font-size: small;
+   border: 2px solid var(--primary);
+ }
+.abadge:hover{
+    color: white;
+    background: #13C1AC;
+    background-image: -webkit-linear-gradient(top, #13C1AC, #13c173);
+    background-image: -moz-linear-gradient(top, #13C1AC, #13c173);
+    background-image: -ms-linear-gradient(top, #13C1AC, #13c173);
+    background-image: -o-linear-gradient(top, #13C1AC, #13c173);
+    background-image: linear-gradient(to bottom, #13C1AC, #13c173);
+   padding: 4px 8px;
+   text-align: center;
+   border-radius: 60px;
+   border: 2px solid #13C1AC;
+
+ }
+
+ .special-text{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 50px;
+    letter-spacing: -4.5px
+ }
+
+
+ /**********card*********/
+
+ @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+
+ .grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 17rem);
+   gap: 2rem;
+ }
+
+ .item {
+   position: relative;
+   height: 19rem;
+   background-color: lightGrey;
+   overflow-y: hidden;
+   border-radius:20px ;
+
+   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+
+   .tarjeta-h5 {
+     margin: 0;
+     display: block;
+     background-color: rgb(255, 255, 255);
+     padding: 0.5rem;
+
+
+   }
+
+   .tarjeta-a {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+
+     &:hover,
+     &:focus {
+       ~ .item__overlay {
+         transform: translate3d(0, 0, 0);
+       }
+     }
+   }
+ }
+
+ .tarjeta-img {
+   width: 100%;
+   height: 100%;
+   display: block;
+   object-fit: cover;
+
+ }
+
+ .item__overlay {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 66%;
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   transition: transform 300ms;
+   background-color: lighten(rgb(255, 255, 255), 15%);
+   transform: translate3d(0, 72%, 0);
+ }
+
+ .item__body {
+   flex-grow: 1;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-around;
+
+
+   p {
+     margin: 0;
+   }
+ }

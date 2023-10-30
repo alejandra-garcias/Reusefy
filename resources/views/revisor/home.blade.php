@@ -22,22 +22,7 @@
                                                     <img src="{{ $image->getUrl(400, 300) }}" alt=""
                                                         class="img-fluid">
                                                 </div>
-                                                <div class="col-md-8">
-                                                    Adult : <i class="bi bi-circle-fill {{ $image->adult }}"></i>
-                                                    [{{ $image->adult }}] <br>
-                                                    Spoof : <i class="bi bi-circle-fill {{ $image->spoof }}"></i>
-                                                    [{{ $image->spoof }}] <br>
-                                                    Medical : <i class="bi bi-circle-fill {{ $image->medical }}"></i>
-                                                    [{{ $image->medical }}] <br>
-                                                    Violence : <i class="bi bi-circle-fill {{ $image->violence }}"></i>
-                                                    [{{ $image->violence }}] <br>
-                                                    Racy : <i class="bi bi-circle-fill {{ $image->racy }}"></i>
-                                                    [{{ $image->racy }}] <br>
-
-                                                    id: {{ $image->id }} <br>
-                                                    path: {{ $image->path }} <br>
-                                                    url: {{ Storage::url($image->path) }} <br>
-                                                </div>
+                                                
                                             </div>
                                         @empty
                                             <div class="col-12">
@@ -124,6 +109,7 @@
             </div>
         </div>
     @else
-        <h3 class="text-center"> {{ __('No hay anuncios para revisar, vuelve más tarde, gracias') }} </h3>
+        <h3 class="text-center"> <img class='logo-texto'
+            src="{{ asset('revisor.svg') }}"alt="">{{ __('No hay anuncios para revisar, vuelve más tarde, gracias') }} </h3>
     @endif
 </x-layout>

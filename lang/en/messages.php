@@ -6,5 +6,5 @@ return [
     'welcome' => 'Buy and sell second-hand items!',
     'welcome.p'=>'Comfortably from your own armchair',
     "Coches"=> 'Cars',
-    "welcomeReusefy" => 'Welcome to Reusefy'
+    "welcomeReusefy" => 'Welcome to '
 ];
