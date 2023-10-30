@@ -1,7 +1,8 @@
 <x-layout>
     <section class="welcome">
         <div class="intro">
-            <h1>{{__('messages.welcome')}}</h1>
+            <h1>{{__('messages.welcomeReusefy')}}</h1>
+            <h2>{{__('messages.welcome')}}</h2>
             <p> {{__('messages.welcome.p')}}</p>
         </div>
 
@@ -17,7 +18,6 @@
                     @endif
                     <div class="card-body">
                         <h5 class="card-title">{{ $ad->title }}</h5>
-                        <p class="card-text text-truncate">{{ $ad->description }}</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">{{ $ad->price }} € </li>
@@ -28,9 +28,6 @@
                         @endif
                         </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="{{ route('ads.show', $ad) }}" class="card-link">Ver</a>
-                    </div>
                 </a>
                 </div>
             @empty

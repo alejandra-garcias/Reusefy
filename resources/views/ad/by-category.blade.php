@@ -1,5 +1,11 @@
 <x-layout>
     {{$ads->links()}}
+
+    <section class="welcome">
+        <div class="intro">
+            <h1>{{__('messages.welcome')}}</h1>
+            <p> {{__('messages.welcome.p')}}</p>
+        </div>
     <div class="anuncios">
     @forelse ($ads as $ad)
     <div class="card" style="width: 18rem;">
@@ -28,4 +34,5 @@
       <a href="{{ route('ads.create') }}">{{__('Publica tu primer anuncio')}}</a> o <a href="{{ route('home') }}">{{__('Vuelve a la home')}}</a>
   @endforelse
 </div>
+    </section>
 </x-layout>

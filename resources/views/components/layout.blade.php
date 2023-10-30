@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <x-nav />
+   <x-nav/>
+
 
     @if (session()->has('message'))
         <x-alertt :type="session('message')['type']" :message="session('message')['text']" />
