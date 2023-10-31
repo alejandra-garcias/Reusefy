@@ -22,7 +22,7 @@
                     <span class="show-badge ">{{ $ad->created_at->format('d/m/Y') }}</span>
                 </div>
             </div>
-            <div class="show-carrousel">
+
                 <div id="adImages" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         @for ($i = 0; $i < $ad->images()->count(); $i++)
@@ -53,7 +53,7 @@
                     </button>
                 </div>
 
-            </div>
+           
             <div class="show-description">
                 <h1>{{ $ad->title }}</h1>
                 <p>{{ $ad->body }}</p>

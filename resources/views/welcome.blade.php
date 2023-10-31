@@ -41,7 +41,7 @@
                             @elseif ($ad->category->name == 'ordenadores')
                                 <img src="{{ asset('ordenadores.svg') }}"style="width: 2.5rem; height:2rem">
                             @endif
-                            <p>{{ $ad->body }}</p>
+                            <p class="truncate">{{ $ad->body }}</p>
                         </div>
                     </div>
                 </div>
