@@ -1,0 +1,54 @@
+.banner {
+    width: 20vw;
+    height: 50vh;
+    background: rgb(76, 76, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.banner-1 {
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    align-items: center;
+    height: 10vh;
+}
+
+.banner-pic {
+    width: 4rem;
+
+}
+
+.banner-2 {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 35vh;
+}
+.banner-2 p{
+    padding: 0.3rem;
+}
+
+.banner-2 h3 {
+    color: rgb(76, 76, 230);
+}
+
+.banner-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: rgb(76, 76, 230);
+    border-radius: 20px
+}
+.banner-3 a {
+    color: white;
+}
+

@@ -14,3 +14,39 @@ nav{
 }
 
 
+.nav1{
+    height: 5rem;
+    display: flex;
+    width:98vw
+}
+.nav-language{
+    padding-top: 1rem;
+    width:33%;
+    display:flex;
+    justify-content:flex-start;
+    gap:2rem;
+    list-style: none;
+}
+.nav-logo{
+
+    width:33%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.nav-form{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.nav-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+
+}

@@ -6,19 +6,21 @@
             <p> {{ __('messages.welcome.p') }}</p>
         </div>
 
-
+        <x-icons />
 
         <div class="anuncios">
             @forelse ($ads as $ad)
                 <div class="item">
                     <a class="tarjeta-a" href="{{ route('ads.show', $ad) }}"></a>
                     @if ($ad->images()->count() > 0)
-                        <img src="{{ $ad->images()->first()->getUrl(400, 300) }}" class="card-img-top tarjeta-img" alt="...">
+                        <img src="{{ $ad->images()->first()->getUrl(400, 300) }}" class="card-img-top tarjeta-img"
+                            alt="...">
                     @else
                         <img src="https://via.placeholder.com/150" class="card-img-top tarjeta-img" alt="...">
                     @endif
                     <div class="item__overlay">
-                        <h5 class="gradiant-text tarjeta-h5" id="person1" aria-hidden="true">{{ $ad->title }} - <span>
+                        <h5 class="gradiant-text tarjeta-h5" id="person1" aria-hidden="true">{{ $ad->title }} -
+                            <span>
                                 @if ($ad->price == intval($ad->price))
                                     {{ intval($ad->price) }} €
                                 @else
@@ -28,16 +30,16 @@
                         <div class="item__body">
 
 
-                            @if ($ad->category->name  == 'coches')
+                            @if ($ad->category->name == 'coches')
                                 <img src="{{ asset('coche.svg') }}"style="width: 2.5rem; height:2rem">
                             @elseif ($ad->category->name == 'motos')
-                            <img src="{{ asset('moto.svg') }}"style="width: 2.5rem; height:2rem">
+                                <img src="{{ asset('moto.svg') }}"style="width: 2.5rem; height:2rem">
                             @elseif ($ad->category->name == 'hogar')
-                            <img src="{{ asset('hogar.svg') }}"style="width: 2.5rem; height:2rem">
+                                <img src="{{ asset('hogar.svg') }}"style="width: 2.5rem; height:2rem">
                             @elseif ($ad->category->name == 'electronica')
-                            <img src="{{ asset('electronica.svg') }}"style="width: 2.5rem; height:2rem">
+                                <img src="{{ asset('electronica.svg') }}"style="width: 2.5rem; height:2rem">
                             @elseif ($ad->category->name == 'ordenadores')
-                            <img src="{{ asset('ordenadores.svg') }}"style="width: 2.5rem; height:2rem">
+                                <img src="{{ asset('ordenadores.svg') }}"style="width: 2.5rem; height:2rem">
                             @endif
                             <p>{{ $ad->body }}</p>
                         </div>

@@ -22,7 +22,7 @@
                                                     <img src="{{ $image->getUrl(400, 300) }}" alt=""
                                                         class="img-fluid">
                                                 </div>
-                                                
+
                                             </div>
                                         @empty
                                             <div class="col-12">
@@ -110,6 +110,7 @@
         </div>
     @else
         <h3 class="text-center"> <img class='logo-texto'
-            src="{{ asset('revisor.svg') }}"alt="">{{ __('No hay anuncios para revisar, vuelve más tarde, gracias') }} </h3>
+                src="{{ asset('revisor.svg') }}"alt="">{{ __('No hay anuncios para revisar, vuelve más tarde, gracias') }}
+        </h3>
     @endif
 </x-layout>
