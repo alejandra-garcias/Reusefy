@@ -25,11 +25,11 @@
             {{__("Categorías")}}
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="{{ route('category.ads', 'coches') }}">{{__("Coches")}}</a></li>
-          <li><a class="dropdown-item" href="{{ route('category.ads', 'motos') }}">{{__("Motocicletas")}}</a></li>
-          <li><a class="dropdown-item" href="{{ route('category.ads', 'ordenadores') }}">{{__("Ordenadores")}}</a></li>
-          <li><a class="dropdown-item" href="{{ route('category.ads', 'hogar') }}">{{__("Hogar")}}</a></li>
-          <li><a class="dropdown-item" href="{{ route('category.ads', 'electronica') }}">{{__("Electrónica")}}</a></li>
+          <li><a class="dropdown-item gradiant-text" href="{{ route('category.ads', 'coches') }}">{{__("Coches")}}</a></li>
+          <li><a class="dropdown-item gradiant-text" href="{{ route('category.ads', 'motos') }}">{{__("Motocicletas")}}</a></li>
+          <li><a class="dropdown-item gradiant-text" href="{{ route('category.ads', 'ordenadores') }}">{{__("Ordenadores")}}</a></li>
+          <li><a class="dropdown-item gradiant-text" href="{{ route('category.ads', 'hogar') }}">{{__("Hogar")}}</a></li>
+          <li><a class="dropdown-item gradiant-text" href="{{ route('category.ads', 'electronica') }}">{{__("Electrónica")}}</a></li>
 
         </ul>
       </li>
@@ -59,7 +59,7 @@
     </form>
     </ul>
     <li class="nav-item">
-        <a class="nav-link active" aria-current="page"
+        <a class="nav-link active gradiant-text" aria-current="page"
             href="{{ route('ads.create') }}">{{ __('Subir artículo') }}</a>
     </li>
 

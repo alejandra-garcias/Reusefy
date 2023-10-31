@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
 
 
  .grid {
    display: grid;
    grid-template-columns: repeat(auto-fit, 17rem);
+   grid-template-rows: repeat(auto-fit, 17rem);
    gap: 2rem;
+
  }
 
  .item {
@@ -13,8 +15,9 @@
    background-color: lightGrey;
    overflow-y: hidden;
    border-radius:20px ;
-
    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+   width:15vw;
+
 
    .tarjeta-h5 {
      margin: 0;
