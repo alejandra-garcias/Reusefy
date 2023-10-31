@@ -6,9 +6,8 @@
     </div>
     <div class="banner-2">
         <h3> Reusefy PRO</h3>
-        <p> Quieres trabajar con nosostros?</p>
-        <a class="btn-azul" href="{{ route('revisor.become') }}">
-        {{ __('Trabaja con nosotros') }}
+        <p> Dale una segunda vida a tus cosas</p>
+        <a class="btn-azul" href="{{ route('ads.create') }}">{{ __('Subir artículo') }}
         </a>
 
     </div>
